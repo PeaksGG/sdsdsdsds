@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PeaksStudio</title>
+        <link rel="stylesheet" href="C:\Users\Jimmy Han\Desktop\Work\test web\style.css">
+    </head>
+    <body>
+    <nav>
+    <div class="logo">
+        <img src="C:\Users\Jimmy Han\Desktop\Work\test web\logo trns.png" alt="Logo" style="height:50px;width:50px;margin-right:8px;">
+        <a href="index.html">PeaksStudio</a>
+        <span class="brand-tagline">myanmar</span>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+        <script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+}
+</script>
+    </nav>
+    <section id="hero" class="hero">
+        <div class="hero-content">
+          <img src="C:\Users\Jimmy Han\Desktop\Work\Main Website\logo trns.png" alt="Profile Image">
+            <h2>This is <span>PeaksStudio</span></h2>
+            <p>Aspiring Graphic Designer & Web Developer</p>
+            <br>
+            <a href="#services" class="btn">my services</a>
+        </div>
+    </section>
+   </div>
+    <section id="about" class="about-section">
+  <div class="about-text">
+    <h2>hi, i'm Jimmy</h2>
+    <p>
+      I studied Diploma in Computer Science with a passion for turning ideas into visually engaging and functional websites. My goal is to help individuals and businesses bring their visions to life through creative website development and design. Alongside web creation, I enjoy crafting graphic designs that adds personality and style to every project.
+<br><br>
+If you’re looking for a dedicated, detail-oriented designer who values both aesthetics and usability, I’m here to deliver results that exceed expectations. Let’s work together to make your online presence stand out.
+    </p>
+  </div>
+  <div class="about-image">
+    <img src="C:\Users\Jimmy Han\Desktop\Work\test web\profile.jpg" alt="About Me">
+    <p>
+      <br><br><br>JimmyHan
+      <br>Graphic Designer & Web Developer/Designer
+      <br>for work and business inquiries,
+      <br>WhatsApp: +60 17 785 1381
+    </p>
+  </div>
+</section>
+<br><br>
+<section class="services" id="services">
+  <br><br><br>
+    <h2>Services</h2>
+    <p class="section-subtitle">Creative solutions to bring your vision to life</p>
+    <br><br>
+    <div class="services-container">
+
+        <div class="service-card">
+            <h3>Graphic Design</h3>
+            <p>Creative designs for your brand.</p>
+            <div class="more-info">
+              <li>Logo Designs</li>
+              <li>Posters</li>
+              <li>Business Cards</li>
+              <li>Social Media Graphics</li>
+              <li>Brand Identity</li>
+              <li>Illustrations</li>
+            </div>
+            <button class="view-more">View More</button>
+        </div>
+
+        <div class="service-card">
+            <h3>Web Design</h3>
+            <p>Modern and responsive layouts.</p>
+            <div class="more-info">
+                <li>UI/UX Designs</li>
+                <li>Responsive Designs</li>
+                <li>Landing Pages</li>
+                <li>E-commerce Sites</li>
+                <li>Portfolios</li>
+            </div>
+            <button class="view-more">View More</button>
+        </div>
+
+        <div class="service-card">
+            <h3>Web Development</h3>
+            <p>Functional and efficient code.</p>
+            <div class="more-info">
+              <li>HTML/CSS/JavaScript</li>
+              <li>Responsive Websites</li> 
+              <li>Business Sites</li>
+              <li>Portfolios</li>
+            </div>
+            <button class="view-more">View More</button>
+        </div>
+
+        <div class="service-card">
+            <h3>Video Editing</h3>
+            <p>Professional editing for all needs.</p>
+            <div class="more-info">
+              <li>Promotional Videos</li>
+              <li>Social Media Clips</li>
+              <li>Event Highlights</li>
+              <li>Vlogs</li>
+              <li>Video Games</li>
+              <li>TikTok Videos</li>
+            </div>
+            <button class="view-more">View More</button>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll(".view-more").forEach(button => {
+        button.addEventListener("click", () => {
+            const moreInfo = button.previousElementSibling;
+            moreInfo.classList.toggle("show");
+            button.textContent = moreInfo.classList.contains("show") ? "View Less" : "View More";
+        });
+    });
+</script>
+<br><br><br><br><br><br><br><br>
+<section id="pricing" class="pricing-section">
+  <h2 class="section-title">Pricing</h2>
+  <p class="section-subtitle">Flexible plans tailored to your needs</p>
+<br>
+
+  <div class="pricing-grid">
+    <div class="pricing-card">
+      <h3>Basic</h3>
+      <p class="price">>60,000ks <span>/project</span></p>
+      <ul>
+        <li>✔ 1 Design Concept</li>
+        <li>✔ 1 Revisions</li>
+        <li>✔ Delivered in 3 Days</li>
+        <li>✘ Source Files</li>
+      </ul>
+      <a href="#contact" class="btn-price">Get Started</a>
+    </div>
+
+    <div class="pricing-card highlight">
+      <h3>Standard</h3>
+      <p class="price">>80,000ks <span>/project</span></p>
+      <ul>
+        <li>✔ 2 Design Concepts</li>
+        <li>✔ 2 Revisions</li>
+        <li>✔ Delivered in 5 Days</li>
+        <li>✔ Source Files</li>
+      </ul>
+      <a href="#contact" class="btn-price">Get Started</a>
+    </div>
+
+    <div class="pricing-card">
+      <h3>Premium</h3>
+      <p class="price">>120,000ks <span>/project</span></p>
+      <ul>
+        <li>✔ 2 Design Concepts</li>
+        <li>✔ 3 Revisions</li>
+        <li>✔ Priority Delivery</li>
+        <li>✔ Source Files</li>
+      </ul>
+      <a href="#contact" class="btn-price">Get Started</a>
+    </div>
+  </div>
+</section>
+<br>
+<section id="contact" class="contact-section">
+  <div class="contact-wrap">
+
+    <div class="contact-info">
+      <h2>Contact</h2>
+      <p>Have a project in mind? Let’s build something beautiful together.</p>
+
+      <ul class="contact-list">
+        <li><strong>Email:</strong>
+          <a href="mailto:peaks.studio.co@gmail.com">peaks.studio.co@gmail.com</a>
+        </li>
+        <li><strong>WhatsApp:</strong>
+          <a href="https://wa.me/60177851381" target="_blank" rel="noopener">+60 17 785 1381</a>
+        </li>
+      </ul>
+
+      <div class="socials">
+      </div>
+    </div>
+
+    <section class="contact" id="contact">
+  <div class="container">
+
+    <form action="https://formspree.io/f/myzpvknl" method="POST" class="contact-form">
+      <div class="row">
+        <input type="text" name="Name" placeholder="Your name" required>
+        <input type="email" name="Email" placeholder="Your email" required>
+      </div>
+      <input type="text" name="Subject" placeholder="Subject">
+      <textarea name="Message" rows="6" placeholder="Tell me about your project…" required></textarea>
+
+      <button type="submit" class="btn-send">Send Message</button>
+    </form>
+  </div>
+</section>
+<footer>
+        <p>© 2025 PeaksStudio.co All rights reserved.</p>
+    </footer> 
+    </body>
+</html>
